@@ -13,38 +13,41 @@
     <br>
     <table border="1" cellspacing="0" cellpadding="10px" align="center">
         <tr>
-            <td><a href="index.html">Home</a></td>
-            <td><a href="profile.html">Profile</a></td>
-            <td><a href="contact.html">Contact</a></td>
-            <td><a href="mahasiswa.html">Data Mahasiswa</a></td>
+            <td><a href="index.php">Home</a></td>
+            <td><a href="profile.php">Profile</a></td>
+            <td><a href="contact.php">Contact</a></td>
+            <td><a href="mahasiswa.php">Data Mahasiswa</a></td>
         </tr>
     </table>
     <h2>
         Data Mahasiswa
     </h2>
-    <a href="tambahdata.html">
+    <a href="tambahdata.php">
         <button>Tambah Data</button>
     </a>
     <table border="1" cellpadding="10px">
         <tr>
-            <th rowspan="2">No</th>
-            <th rowspan="2">Nama</th>
-            <th rowspan="2">Foto</th>
-            <th colspan="3">Nilai</th>                   
-        </tr>
-        <tr>
-            <!-- <th rowspan="2">Nama</th> -->
-            <th>UTS</th>
-            <th>UAS</th>
-            <th>Tugas</th>
-        </tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>NIM</th>
+            <th>Program Studi</th>
+            <th>Email</th>
+            <th>No. HP</th>
+            <th>Foto</th>
+            <th>Aksi</th>            
+        </tr>        
         <tr>
             <td align="center">1</td>
             <td>Ahmad Jackson</td>
-            <td><img src="assets/images/ahmad.webp" alt="Ahmad" width="60px"></td>
-            <td align="center">90</td>
-            <td align="center">80</td>
-            <td align="center">60</td>
+            <td>1132532432432</td>
+            <td>Informatika Medis</td>
+            <td>ahmad@mail.com</td>
+            <td>0866554321322</td>
+            <td><img src="assets/images/ahmad.webp" alt="Ahmad" width="60px"></td>  
+            <td>
+                <a href="editdata.php"><button>Edit</button></a> | 
+                <a href="deletedata.php"><button>Hapus</button></a>
+            </td>          
         </tr>
     </table>
     <br>
