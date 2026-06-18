@@ -19,4 +19,36 @@
 
     }
 
+
+    function tambahdata($data)
+    {
+        global $koneksi;
+
+        $nama = htmlspecialchars($data["nama"]);
+        $nim = htmlspecialchars($data["nim"]); 
+        $prodi = htmlspecialchars($data["prodi"]);
+        $email = htmlspecialchars($data["email"]);
+        $nohp = htmlspecialchars($data["hp"]);
+        $foto = $data["foto"];
+
+        $query = "INSERT INTO mahasiswa (nama,nim,prodi,email,no_hp,foto)
+                VALUES ('$nama', '$nim', '$prodi', '$email', '$nohp', '$foto')";
+    
+        mysqli_query($koneksi,$query);
+
+        return mysqli_affected_rows($koneksi); /// QUERY OK 1 ROW AFFECTED
+
+    }
+
+
+    function hapusdata($id)
+    {
+        global $koneksi;
+
+        $query = "DELETE FROM mahasiswa WHERE id=$id";
+        mysqli_query($koneksi,$query);
+
+        return mysqli_affected_rows($koneksi); /// QUERY OK 1 ROW AFFECTED
+    }
+
 ?>
